@@ -19,6 +19,7 @@ cp ./pages/* ./res/
 cp ./pics/* ./res/
 cp -r ./stableFiles/* ./res/
 
+
 # generate epub file
 cd ./res
 zip -r book.epub ./*
