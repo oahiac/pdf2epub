@@ -112,7 +112,7 @@ class book:
         pages.sort()
         self.pageNum = len(pages)
         for pageNum in range(1, len(pages)+1):
-            manifest += '    ' + r'<item id="id'+str(10000+pageNum-1)+'" href="page_' +  "%003d"%(pageNum-1) + '.html" media-type="application/xhtml+xml"/>'
+            manifest += '    ' + r'<item id="id'+str(10000+pageNum-1)+'" href="page_' +  "%003d"%(pageNum) + '.html" media-type="application/xhtml+xml"/>'
 
         # input regular tags
         manifest += '''<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>

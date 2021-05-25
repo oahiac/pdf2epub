@@ -17,12 +17,13 @@ pdftoppm $1 ./pics/pic -jpeg
 cp ./pics/pic-001.jpg ./pics/cover.jpeg
 cp ./pages/* ./res/
 cp ./pics/* ./res/
-cp ./stableFiles/* ./res/
-mkdir ./res/META-INF
-mv ./res/container.xml ./res/META-INF/container.xml
+cp -r ./stableFiles/* ./res/
 
 # generate epub file
-zip -r book.epub ./res/*
+cd ./res
+zip -r book.epub ./*
+mv book.epub ../
+cd ..
 
 #mv book.epub $1/../book.epub
 
