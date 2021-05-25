@@ -15,7 +15,7 @@ class book:
         print("Enter the seriesNumber: ", end='')
         self.seriesNumber = input()
         while True:
-            print("If page progression from left to right? [Y/n]")
+            print("If page progression from left to right? [Y/n]", end='')
             progressionRes = input()
             if progressionRes == 'Y':
                 self.rtl = True
