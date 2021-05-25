@@ -14,6 +14,18 @@ class book:
         self.bookSeries = input()
         print("Enter the seriesNumber: ", end='')
         self.seriesNumber = input()
+        while True:
+            print("If page progression from left to right? [Y/n]")
+            progressionRes = input()
+            if progressionRes == 'Y':
+                self.rtl = True
+                break
+            elif progressionRes == 'n':
+                self.rtl = False
+                break
+            else:
+                continue
+            
         #generate pages
         self.generatePages()
 
@@ -71,7 +83,12 @@ class book:
     <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>'''
 
         contentCONF_secondPart = self.manifest() #pages and pictures toc.ncx stable files
-        contentCONF_thirdPart = '''</manifest>
+        if self.rtl:
+            contentCONF_thirdPart = '''</manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>'''
+        else:
+            contentCONF_thirdPart = '''</manifest>
   <spine toc="ncx" page-progression-direction="rtl">
     <itemref idref="titlepage"/>'''
         
