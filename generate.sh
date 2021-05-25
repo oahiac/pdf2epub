@@ -17,7 +17,9 @@ pdftoppm $1 ./pics/pic -jpeg
 cp ./pics/pic-001.jpg ./pics/cover.jpeg
 cp ./pages/* ./res/
 cp ./pics/* ./res/
-cp  -r ./stableFiles/* ./res/
+cp ./stableFiles/* ./res/
+mkdir ./res/META-INF
+mv ./res/container.xml ./res/META-INF/container.xml
 
 # generate epub file
 zip -r book.epub ./res/*
