@@ -22,7 +22,7 @@ cp  -r ./stableFiles/* ./res/
 # generate epub file
 zip -r book.epub ./res/*
 
-mv book.epub $1/../book/epub
+mv book.epub $1/../book.epub
 
 rm -rf ./pics
 rm -rf ./pages
