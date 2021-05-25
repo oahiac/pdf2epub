@@ -7,13 +7,13 @@ class book:
     def __init__(self):
         infoList = ["bookName", "bookAuthor", "bookSeries", "seriesNumber"]
         print("Enter the bookName: ", end='')
-        self.bookName = #input()
+        self.bookName = input()
         print("Enter the bookAuthor: ", end='')
-        self.bookAuthor = #input()
+        self.bookAuthor = input()
         print("Enter the bookSeries: ", end='')
-        self.bookSeries = #input()
+        self.bookSeries = input()
         print("Enter the seriesNumber: ", end='')
-        self.seriesNumber = #input()
+        self.seriesNumber = input()
         #generate pages
         self.generatePages()
 
