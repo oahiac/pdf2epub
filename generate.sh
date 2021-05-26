@@ -14,7 +14,14 @@ pdftoppm $1 ./pics/pic -jpeg
 ./main.py
 
 # copy all the files into res
+cp ./pics/pic-1.jpg ./pics/cover.jpeg
+cp ./pics/pic-01.jpg ./pics/cover.jpeg
 cp ./pics/pic-001.jpg ./pics/cover.jpeg
+cp ./pics/pic-0001.jpg ./pics/cover.jpeg
+cp ./pics/pic-00001.jpg ./pics/cover.jpeg
+
+
+
 cp ./pages/* ./res/
 cp ./pics/* ./res/
 cp -r ./stableFiles/* ./res/
