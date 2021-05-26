@@ -3,11 +3,11 @@
 echo "$1"
 # pdf to pics
 mkdir ./pics
-rm ./pics/.DS_Store
+#rm ./pics/.DS_Store
 mkdir ./res
-rm ./res/.DS_Store
+#rm ./res/.DS_Store
 mkdir ./pages
-rm ./pages/.DS_Store
+#rm ./pages/.DS_Store
 
 pdftoppm $1 ./pics/pic -jpeg
 
