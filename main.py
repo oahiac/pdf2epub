@@ -61,8 +61,8 @@ class book:
     </navLabel>
     <content src="titlepage.xhtml"/>
   </navPoint>
-<navMap>
-<ncx>
+</navMap>
+</ncx>
 '''
         f = open("./res/toc.ncx", 'w')
         f.write(tocNCX)
